@@ -1,0 +1,12 @@
+# If not running interactively, don't do anything (leave this at the top of this file)
+[[ $- != *i* ]] && return
+
+source ~/.local/share/omarchy/default/bash/rc
+
+# prettify man pages
+alias man=batman
+# walk through filterable files in directory with instant formatted output (actually insane!) 
+alias f='fzf --preview "bat --color=always {}"'
+# fuck cat  
+alias cat=bat
+alias ll='ls -la'
