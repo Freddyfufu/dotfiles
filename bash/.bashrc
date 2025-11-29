@@ -4,9 +4,14 @@
 source ~/.local/share/omarchy/default/bash/rc
 
 # prettify man pages
-alias man=batman
+eval "$(batman --export-env)"
 # walk through filterable files in directory with instant formatted output (actually insane!) 
 alias f='fzf --preview "bat --color=always {}"'
 # fuck cat  
 alias cat=bat
 alias ll='ls -la'
+
+
+
+# export envs
+export BAT_CONFIG_PATH='~/.config/bat-config'
