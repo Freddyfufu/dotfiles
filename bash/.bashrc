@@ -1,10 +1,6 @@
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
-source ~/.local/share/omarchy/default/bash/rc
-
-# Prettify man pages
-eval "$(batman --export-env)"
 
 # Functions
 
