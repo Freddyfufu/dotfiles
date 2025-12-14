@@ -1,6 +1,7 @@
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
+export PS1="\[\e[35m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[1;34m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[35m\]]\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
 
 # Functions
 
@@ -32,4 +33,4 @@ alias cat=bat
 
 # Environment variables
 
-export BAT_CONFIG_PATH='~/.config/bat-config'
+export BAT_CONFIG_PATH=$HOME/.config/bat-config
