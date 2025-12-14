@@ -34,3 +34,5 @@ alias cat=bat
 # Environment variables
 
 export BAT_CONFIG_PATH=$HOME/.config/bat-config
+# use my nvidia gpu for local LLM's
+export CUDA_VISIBLE_DEVICES=GPU-a7c3436d-8548-8cc2-11c0-9934bfd76b06
