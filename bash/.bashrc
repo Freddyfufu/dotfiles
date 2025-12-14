@@ -9,7 +9,7 @@
 f () 
 {
       local file
-      file=$(fzf --preview "preview.sh {}")
+      file=$(fzf -e --preview "preview.sh {}")
       if [ -n "$file" ]; then
         nvim "$file"
       fi

@@ -1,1 +1,2 @@
-bat --theme="Github"
+--theme="DarkNeon"
+--map-syntax "*.conf:Apache Conf"
