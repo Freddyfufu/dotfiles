@@ -11,6 +11,8 @@ if [[ ! $file =~ "." ]]; then
     bat --language=bash --color=always $1
 elif [[ $file_ending == "conf" ]]; then
     bat --language="Apache Conf" --color=always $1
+elif [[ $file_ending = "png" ]]; then
+    chafa --size=80x24 $1
 else
     bat --color=always $1
 fi
