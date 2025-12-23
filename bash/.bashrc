@@ -10,7 +10,7 @@ export PS1="\[\e[35m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[1;34m
 f () 
 {
       local file
-      file=$(fzf -e --preview "preview.sh {}")
+      file=$(fzf --preview "preview.sh {}")
       if [ -n "$file" ]; then
         nvim "$file"
       fi
