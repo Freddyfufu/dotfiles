@@ -24,7 +24,7 @@ alias ll='ls -la'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias tree='eza --tree'
 # copy file input to clipboard
-alias clip='xclip -sel c <'
+alias clip='xclip -r -sel c <'
 
 # File manager
 alias r=ranger
