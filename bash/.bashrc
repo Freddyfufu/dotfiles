@@ -23,6 +23,8 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 alias ll='ls -la'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias tree='eza --tree'
+# copy file input to clipboard
+alias clip='xclip -sel c <'
 
 # File manager
 alias r=ranger
